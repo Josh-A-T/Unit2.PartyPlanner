@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><title>Party Planner Pro</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Party Planner Pro</h1>
+        <button id="addPartyBtn" class="btn">Add New Party</button>
+      </header>
+  
+      <div id="partyList" class="party-list">
+        <!-- Parties will be dynamically added here -->
+      </div>
+  
+      <dialog id="partyModal" class="modal">
+        <form id="partyForm">
+          <h2>Add New Party</h2>
+          <dialog id="partyModal">
+            <form id="partyForm">
+              <label for="partyDescription">Description:</label>
+              <input id="partyDescription" type="text" required>
+              
+              <label for="partyDate">Date:</label>
+              <input id="partyDate" type="date" required>
+              
+              <label for="partyLocation">Location:</label>
+              <input id="partyLocation" type="text" required>
+              
+              <button type="submit">Save</button>
+              <button type="button" id="cancelBtn">Cancel</button>
+            </form>
+          </dialog>
+          <div class="button-group">
+            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
+    <script type="module" src="partyPlanner.js"></script>
+  </body>
+  </html>
